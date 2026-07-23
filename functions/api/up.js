@@ -2,7 +2,7 @@
 // route: /api/up  (GET=อ่าน log, POST=อัปโหลด)
 // env vars ที่ต้องตั้งบน Cloudflare Pages: GH_TOKEN (PAT เขียน ml7-data), UPLOAD_SECRET
 const REPO = "savingprivatedint-cmyk/ml7-data";
-const TEAMS = ["eq", "pl", "of"];
+const TEAMS = ["eq", "pl", "of", "energy"];
 const MAX_B64 = 5_800_000;
 const ALLOWED_EXT = /\.(xlsx|xls|xlsm|csv|txt|zip|pdf)$/i;
 
