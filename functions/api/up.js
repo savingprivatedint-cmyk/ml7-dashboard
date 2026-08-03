@@ -3,8 +3,8 @@
 // env vars ที่ต้องตั้งบน Cloudflare Pages: GH_TOKEN (PAT เขียน ml7-data), UPLOAD_SECRET
 const REPO = "savingprivatedint-cmyk/ml7-data";
 const TEAMS = ["eq", "pl", "of", "energy"];
-const MAX_B64 = 5_800_000;
-const ALLOWED_EXT = /\.(xlsx|xls|xlsm|csv|txt|zip|pdf)$/i;
+const MAX_B64 = 11_000_000;
+const ALLOWED_EXT = /\.(xlsx|xls|xlsm|csv|txt|zip|pdf|jpg|jpeg|png|heic|heif|webp)$/i;
 
 const json = (obj, status = 200) =>
   new Response(JSON.stringify(obj), { status, headers: { "content-type": "application/json; charset=utf-8" } });
